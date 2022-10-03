@@ -37,7 +37,7 @@ export const Receive = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
     h2 {
         font-family: 'Source Sans Pro';
@@ -68,13 +68,17 @@ export const Receive = styled.div`
     }
 `
 
+export const ContainerReceive = styled.div`
+    width: 186px;
+`
+
 export const WillReceive = styled.div`
     display: flex;
     justify-content: space-between;
     width: 84%;
 `
 
-export const Inputs = styled.div`
+export const Inputs = styled.form`
     width: 62%;
     height: 60%;
     display: flex;
@@ -108,5 +112,26 @@ export const Inputs = styled.div`
         font-size: 11px;
         line-height: 13px;
         color: #CECECE;
+    }
+
+    button {
+        background: var(--light-grey);
+        border: 1px solid var(--dark-blue);
+        border-radius: 4px;
+        width: 251px;
+        height: 37px;
+        font-family: 'Source Sans Pro';
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--dark-blue);
+        padding-left: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        opacity: 0.7;
+    }
+
+    button:hover {
+        opacity: 1;
+        cursor: pointer;
     }
 `
